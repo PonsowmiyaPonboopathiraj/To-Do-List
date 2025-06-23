@@ -12,7 +12,7 @@ app.use(cors())
 // let todos = [];
 
 // connecting mongodb
-mongoose.connect('mongodb://localhost:27017/mern-app')
+mongoose.connect('//connect your mongodb')
 .then(() => {
     console.log('DB Connected!')
 })
@@ -102,7 +102,7 @@ app.delete('/todos/:id', async (req, res) => {
 })
 
 //Start the server
-const port = 8000;
+const port = //port number;
 app.listen(port, () => {
     console.log("Server is listening to port "+port);
 })
